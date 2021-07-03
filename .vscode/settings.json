@@ -13,5 +13,7 @@
       "username": "root",
       "password": "root"
     }
-  ]
+  ],
+  "python.linting.pylintEnabled": true,
+  "python.linting.enabled": true
 }
