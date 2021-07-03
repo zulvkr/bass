@@ -17,6 +17,7 @@ class UserManager(BaseUserManager):
         )
 
         user.set_password(password)
+        user.is_ambassador = False
         user.is_admin = False
         user.is_staff = False
         user.save(using=self._db)
@@ -34,6 +35,7 @@ class UserManager(BaseUserManager):
         )
 
         user.set_password(password)
+        user.is_ambassador = False
         user.is_admin = True
         user.is_staff = True
         user.is_superuser = True
