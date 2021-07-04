@@ -11,7 +11,7 @@ class JWTAuthentication(BaseAuthentication):
 
     def authenticate(self, request):
 
-        is_ambassador = 'api/ambassador' in request.path
+        # is_ambassador = 'api/ambassador' in request.path
         is_admin = 'api/admin' in request.path
 
         token = request.COOKIES.get('jwt')
