@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'corsheaders',
     'core',
     'administrator',
+    'ambassador',
+    'checkout'
 ]
 
 MIDDLEWARE = [
@@ -152,3 +154,9 @@ CORS_ALOW_CREDENTIALS = True
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+EMAIL_HOST = '172.17.0.1'
+EMAIL_PORT = '1025'
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
+EMAIL_USE_TLS= False
